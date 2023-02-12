@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "./Navbar";
-const Destination = () => {
+const Destination = (props) => {
   return (
     <>
       <Navbar />
-      <div>Destination</div>
+      <div>{props.destinations[0].name}</div>
     </>
   );
 };

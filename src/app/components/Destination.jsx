@@ -69,7 +69,7 @@ const Destination = ({ destinations }) => {
                   est. travel time
                 </h2>
                 <h1 className="text-[28px] leading-[32px]">
-                  {destinations[destinationsId].travelTime}
+                  {destinations[destinationsId].travel}
                 </h1>
               </div>
             </div>

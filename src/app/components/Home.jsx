@@ -25,7 +25,12 @@ const Home = () => {
               this world experience!
             </p>
           </div>
-          <Link href="/destination">Explore</Link>
+          <Link
+            href="/destination"
+            className="bg-white w-fit  py-[3.3rem] px-6 text-[20px] leading-[23px] uppercase rounded-full text-black mb-[5rem] sm:px-[5rem] sm:py-[115px] sm:min-w-[16%]"
+          >
+            Explore
+          </Link>
         </div>
       </div>
     </div>

@@ -10,8 +10,8 @@ const Home = () => {
         className="text-white flex flex-col overflow-hidden  px-[24px] h-[100vh] sm:pr-0 "
       >
         <Navbar />
-        <div className="text-center flex flex-col justify-between items-center sm:pr-[24px] sm:mt-[100px]  lg:flex-row lg:mt-[210px] lg:px-[7rem] lg:justify-around lg:gap-x-[20rem]">
-          <div className="lg:w-[35%] sm:mb-[140px] lg:text-start">
+        <div className="text-center flex flex-col justify-between items-center sm:pr-[24px] sm:mt-[100px]  lg:flex-row lg:mt-[80px] lg:px-[7rem] lg:justify-around lg:gap-x-[20rem]">
+          <div className="lg:w-[50%] sm:mb-[140px] lg:text-start">
             <h2 className="tracking-[2.7px] leading-[19px] text-[#D0D6F9] mb-8 lg:text-[28px] lg:leading-[34px] lg:tracking-[4.7px]">
               SO, YOU WANT TO TRAVEL TO
             </h2>

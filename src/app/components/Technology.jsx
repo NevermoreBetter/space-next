@@ -1,5 +1,5 @@
 "use client";
-
+import { nanoid } from "nanoid";
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 const Technology = ({ technology }) => {
@@ -36,6 +36,7 @@ const Technology = ({ technology }) => {
             <ul className="flex justify-center gap-x-[1rem] mb-[32px] lg:flex-col  lg:gap-8 text-black">
               {values.map((val) => (
                 <li
+                  key={nanoid()}
                   id={activeId === val.id ? "activeTech" : "inactive"}
                   className="cursor-pointer text-white text-[1.5rem] border rounded-full px-[1rem] py-[.5rem] lg:px-[2.2rem] lg:py-[1.7rem] uppercase"
                   onClick={() => {

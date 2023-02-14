@@ -1,5 +1,5 @@
 "use client";
-
+import { nanoid } from "nanoid";
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 const Destination = ({ destinations }) => {
@@ -35,6 +35,7 @@ const Destination = ({ destinations }) => {
               <ul className="flex justify-around mb-[1rem] lg:justify-start lg:gap-x-8">
                 {values.map((val) => (
                   <li
+                    key={nanoid()}
                     id={activeId === val.id ? "activePlanet" : "inactive"}
                     className="cursor-pointer uppercase"
                     onClick={() => {

@@ -38,7 +38,7 @@ const Technology = ({ technology }) => {
                 <li
                   key={nanoid()}
                   id={activeId === val.id ? "activeTech" : "inactive"}
-                  className="cursor-pointer text-white text-[1.5rem] border rounded-full px-[1rem] py-[.5rem] lg:px-[2.2rem] lg:py-[1.7rem] uppercase"
+                  className="cursor-pointer text-white text-[1.5rem] border rounded-full px-[1rem] py-[.5rem] lg:px-[2.3rem] lg:py-[1.7rem] uppercase"
                   onClick={() => {
                     setActiveId(val.id);
                     setActiveTech(val.id);

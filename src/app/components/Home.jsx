@@ -10,7 +10,7 @@ const Home = () => {
         className="text-white flex flex-col overflow-hidden  px-[24px] h-[100vh] sm:pr-0 "
       >
         <Navbar />
-        <div className="text-center flex flex-col justify-between items-center sm:pr-[24px] sm:mt-[100px]  lg:flex-row lg:mt-[210px] lg:px-[7rem] lg:justify-evenly lg:gap-x-[20rem]">
+        <div className="text-center flex flex-col justify-between items-center sm:pr-[24px] sm:mt-[100px]  lg:flex-row lg:mt-[210px] lg:px-[7rem] lg:justify-around lg:gap-x-[20rem]">
           <div className="lg:w-[35%] sm:mb-[140px] lg:text-start">
             <h2 className="tracking-[2.7px] leading-[19px] text-[#D0D6F9] mb-8 lg:text-[28px] lg:leading-[34px] lg:tracking-[4.7px]">
               SO, YOU WANT TO TRAVEL TO
@@ -27,7 +27,7 @@ const Home = () => {
           </div>
           <Link
             href="/destination"
-            className="bg-white w-fit  py-[3.3rem] px-6 text-[20px] leading-[23px] uppercase rounded-full text-black mb-[5rem] sm:px-[5rem] sm:py-[115px] sm:min-w-[16%]"
+            className="flex justify-center flex-[0_0_auto] bg-white w-fit px-[1.5rem] py-[3.5rem]  text-[20px] leading-[23px] uppercase rounded-full text-center text-black mb-[5rem] hover:shadow-custom hover:scale-90 duration-300 sm:px-[5rem] sm:py-[115px] sm:min-w-[16%] "
           >
             Explore
           </Link>

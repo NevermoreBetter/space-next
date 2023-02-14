@@ -21,9 +21,9 @@ const Crew = ({ crew }) => {
           </h2>
         </div>
         <div className="text-center flex flex-col items-center mt-[2rem] mb-[1.7rem] sm:pr-[24px] sm:flex-col-reverse  sm:mb-0 lg:flex-row-reverse lg:px-[2rem] lg:justify-evenly">
-          <div className="flex flex-col items-center after:w-[20rem] after:h-[1px] after:bg-[#383B4B] after:block sm:after:hidden lg:relative lg:self-end">
+          <div className=" flex flex-col  items-center after:w-[20rem] after:h-[1px] after:bg-[#383B4B] after:block sm:after:hidden lg:relative lg:self-end">
             <img
-              className="w-[10rem] h-[10.9rem] sm:min-h-[56vh] sm:min-w-[30rem] lg:h-[79vh] lg:w-[35rem]"
+              className="crew-image w-[10rem] h-[10.9rem] sm:min-h-[56vh] sm:min-w-[30rem] lg:h-[79vh] lg:w-[35rem]"
               src={crew[crewId].images.webp}
               alt=""
             />
@@ -44,7 +44,7 @@ const Crew = ({ crew }) => {
                 </li>
               ))}
             </ul>
-            <div className="lg:mb-8">
+            <div className="crew-detail lg:mb-8">
               <h3 className="mb-[10px] uppercase opacity-[0.5] lg:text-[32px] lg:leading-[37px]">
                 {crew[crewId].role}
               </h3>

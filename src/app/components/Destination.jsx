@@ -26,11 +26,11 @@ const Destination = ({ destinations }) => {
         </div>
         <div className="text-center flex flex-col items-center mt-[2rem] sm:pr-[24px] lg:flex-row lg:justify-evenly ">
           <img
-            className="w-[40%] h-[40%] lg:w-[30%]"
+            className="planet-image w-[40%] h-[40%] lg:w-[30%]"
             src={destinations[destinationsId].images.webp}
             alt=""
           />
-          <div className="lg:w-[30%] sm:w-[80%] lg:text-start">
+          <div className="planet-detail lg:w-[30%] sm:w-[80%] lg:text-start">
             <div className="mt-[1.5rem] relative ">
               <ul className="flex justify-around mb-[1rem] lg:justify-start lg:gap-x-8">
                 {values.map((val) => (
@@ -55,7 +55,7 @@ const Destination = ({ destinations }) => {
                 </h3>
               </div>
             </div>
-            <div className="mt-[64px] mb-8 sm:flex sm:gap-x-[10rem] sm:justify-center lg:justify-start">
+            <div className=" mt-[64px] mb-8 sm:flex sm:gap-x-[10rem] sm:justify-center lg:justify-start">
               <div className="mb-[2rem]">
                 <h2 className="uppercase leading-[17px] tracking-[2.3px]  text-[14px] mb-4">
                   Avg. distance

@@ -71,6 +71,46 @@ p {
   border-bottom: 1px solid red;
 }
 
+.crew-detail,
+.tech-detail,
+.planet-detail {
+  opacity: 0;
+  animation: fade-in 1000ms forwards;
+}
+
+.crew-image,
+.tech-image,
+.planet-image {
+  opacity: 0;
+  animation: fade-in 500ms forwards 1s;
+}
+
+.menu-item {
+  position: relative;
+}
+.menu-item::after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 5px;
+  width: 0;
+  background-color: white;
+  transition: all 500ms;
+}
+
+.menu-item:hover::after {
+  width: 100%;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media screen and (min-width: 640px) {
   #home {
     background-image: url("/assets/home/background-home-tablet.jpg");

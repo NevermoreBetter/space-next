@@ -9,7 +9,7 @@ const Technology = ({ technology }) => {
     { id: 2, text: "3" },
   ];
   const [activeId, setActiveId] = useState(0);
-  const [activeTech, setActiveTech] = useState(1);
+  const [activeTech, setActiveTech] = useState(0);
   return (
     <>
       <div
@@ -26,7 +26,7 @@ const Technology = ({ technology }) => {
         <div className="text-center flex flex-col items-center mt-[2rem] mb-[1.7rem] sm:pr-[24px] lg:flex-row-reverse lg:px-[2rem] lg:justify-around lg:pr-0">
           <div className="flex flex-col items-center w-[120%] lg:w-[40%] lg:relative lg:left-[8%]">
             <img
-              className="w-[100%] h-[10.9rem] sm:h-[20rem] lg:w-full lg:h-[65vh]"
+              className="tech-image w-[100%] h-[10.9rem] sm:h-[20rem] lg:w-full lg:h-[65vh]"
               src={technology[activeTech].imageDesc}
               alt=""
               srcSet={`${technology[activeTech].images.landscape} 999w, ${technology[activeTech].images.portrait} 1000w`}
@@ -37,7 +37,7 @@ const Technology = ({ technology }) => {
               {values.map((val) => (
                 <li
                   id={activeId === val.id ? "activeTech" : "inactive"}
-                  className="cursor-pointer text-white text-[1.5rem] border rounded-full px-[1rem] py-[.3rem] lg:px-[2.2rem] lg:py-[1.5rem] uppercase"
+                  className="cursor-pointer text-white text-[1.5rem] border rounded-full px-[1rem] py-[.5rem] lg:px-[2.2rem] lg:py-[1.7rem] uppercase"
                   onClick={() => {
                     setActiveId(val.id);
                     setActiveTech(val.id);
@@ -47,7 +47,7 @@ const Technology = ({ technology }) => {
                 </li>
               ))}
             </ul>
-            <div className="">
+            <div className="tech-detail">
               <h3 className="mb-[10px] uppercase opacity-[0.5] lg:text-[16px] lg:leading-[19px] lg:tracking-[ 2.7px]">
                 The terminology...
               </h3>

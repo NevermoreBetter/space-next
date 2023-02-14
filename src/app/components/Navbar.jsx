@@ -37,7 +37,7 @@ const Navbar = () => {
           }}
         />
         <ul className="sm:gap-8 sm:flex sm:px-8 lg:flex lg:gap-16">
-          <li className="mb-6 uppercase sm:mb-0 ">
+          <li className="menu-item mb-6 uppercase sm:mb-0 ">
             <Link href="/">
               <span className="font-bold tracking-wider sm:hidden lg:inline lg:mr-2">
                 00
@@ -45,7 +45,7 @@ const Navbar = () => {
               Home
             </Link>
           </li>
-          <li className="mb-6 uppercase  sm:mb-0">
+          <li className="menu-item mb-6 uppercase  sm:mb-0">
             <Link href="/destination">
               <span className="font-bold tracking-wider sm:hidden lg:inline lg:mr-2">
                 01
@@ -53,7 +53,7 @@ const Navbar = () => {
               Destination
             </Link>
           </li>
-          <li className="mb-6 uppercase  sm:mb-0">
+          <li className="menu-item mb-6 uppercase  sm:mb-0">
             <Link href="/crew">
               <span className="font-bold tracking-wide sm:hidden lg:inline  lg:mr-2">
                 02
@@ -61,7 +61,7 @@ const Navbar = () => {
               Crew
             </Link>
           </li>
-          <li className=" uppercase">
+          <li className="menu-item  uppercase">
             <Link href="/technology">
               <span className="font-bold tracking-wider sm:hidden lg:inline lg:mr-2">
                 03
